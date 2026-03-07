@@ -56,7 +56,7 @@ def getAccessToken(body: dict):                                                 
         raise HTTPException(500, detail=f"Server error: {str(e)}")
 
 
-@router.post("/sync_checking_accounts", status_code=200)
+@router.post("/sync_checking_accounts", status_code = 200)
 def getCheckingAccounts():
     try:
         result = dataAutomation.get_latest_plaid_item()
@@ -74,7 +74,7 @@ def getCheckingAccounts():
         raise HTTPException(500, detail=f"Server error: {str(e)}")
 
 
-@router.post("/sync_credit_accounts", status_code=200)
+@router.post("/sync_credit_accounts", status_code = 200)
 def getCreditAccounts():
     try:
         result = dataAutomation.get_latest_plaid_item()
@@ -92,7 +92,7 @@ def getCreditAccounts():
         raise HTTPException(500, detail=f"Server error: {str(e)}")
 
 
-@router.post("/sync-transactions", status_code=200)
+@router.post("/sync-transactions", status_code = 200)
 def syncTransactions(body: dict = None):
     """Catogorizes transcations recived from _clean_plaid_transactions to the bank account they came from whitch we know because of accountID, 
        and then store related transcation data in the correct columns within the accounts table in our db, but only for the most recently linked item"""
@@ -151,7 +151,9 @@ def _clean_plaid_transactions(raw):
     return normalized
 
 
-    #refresh balance endpoint
+    @router.post("/refresh_account_data", status_code = 200)
+    def refreshAccountData(): 
+        
 
 #------------------------------------NOTES----------------------------------------------------------------------------------------#
 """
