@@ -151,9 +151,14 @@ def _clean_plaid_transactions(raw):
     return normalized
 
 
-    @router.post("/refresh_account_data", status_code = 200)
-    def refreshAccountData(): 
-        
+@router.post("/refresh_account_data", status_code = 200)
+def refreshAccountData():
+    getCheckingAccounts(), getCreditAccounts(), syncTransactions()
+    logger.info("Refreshing account data")
+    return {"Refreshed Acc Data": True}                              #return response in JSON to inform client as a repsonse
+
+    
+
 
 #------------------------------------NOTES----------------------------------------------------------------------------------------#
 """
