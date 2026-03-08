@@ -4,6 +4,7 @@ ANALYTICAL == Past & Present Only
 import pandas as pd
 import numpy as np 
 import logging
+from datetime import date, timedelta
 
 class StatisticalAnalytics:
 
@@ -20,6 +21,7 @@ Expenses = sum(amount where amount < 0)
 
 4. Monthly Spend
 Monthly Spend = sum(amount) grouped by month
+
 
 5. Burn Rate (Daily)
 Burn Rate = abs(total expenses over last 30 days) / 30
