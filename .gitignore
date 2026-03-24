@@ -47,3 +47,6 @@ desktop.ini
 build/
 dist/
 *.egg-info/
+
+#virtual envirment folder
+venv/

@@ -24,3 +24,5 @@ git clone https://github.com/your-username/Automated_Financial_Intelligence_Engi
 cd Automated_Financial_Intelligence_Engine
 pip install -r requirements.txt
 uvicorn main:app --reload
+
+//Installation//inclkude install req depndies, api key setups on top of waht to add, how to run  , Project Structure(arch)
