@@ -8,7 +8,6 @@ Connecting program to existing database
 
 
 class Connection:
-
                                                     #to connect to the db, we need the host, port, user, password, and database WHY:
                                                     # DB && the value's must come from .env file ALWAYS 
     def __init__(self):                             #because we are getting the data from .env file we dont need to include the objects within the constructor's signature

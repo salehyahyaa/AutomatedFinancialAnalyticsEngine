@@ -6,8 +6,8 @@ from collections import defaultdict
 from decimal import Decimal, InvalidOperation
 from typing import Any, Dict, Iterable, List, Optional, Sequence
 
-
-transaction = Dict[str, any] # transcations appear as dicts key==str, value==anything
+#TYPE ALIASING
+Transaction = Dict[str, any] # TYPE ALIASING: as dicts key==str, value==anything
 
 
 
