@@ -184,3 +184,6 @@ HOW WE CLEAN TRNASCATOINS DATA, ASSIGN IT TO THE CORRECT ACCOUNT, AND STORE IT I
 - After that, the syncTransactions endpoint categorizes each transaction into the correct account column (and the other columns) in the database based on the transaction dict’s account ID.
 
 """
+
+
+

@@ -32,6 +32,7 @@ Transaction = Dict[str, any] # TYPE ALIASING: as dicts key==str, value==anything
 
 
 
+
 class StatisticalAnalytics:
 
     NET_CASH_FLOW = "net_cash_flow"                         #for enum category
