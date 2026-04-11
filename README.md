@@ -59,7 +59,6 @@ Automated_Financial_Intelligence_Engine/
 
 
 ## Installation
-
 ### 1. Clone the Repository
 ```
 git clone https://github.com/salehyahyaa/Automated_Financial_Intelligence_Engine.git
@@ -85,7 +84,7 @@ pip install -r requirements.txt
 
 ## How to Run
 
-### 1) Create your `.env`
+### 1. Create your `.env`
 The backend loads env vars using `python-dotenv`, so make sure these exist before running:
 ```
 # Plaid
@@ -100,7 +99,7 @@ DB_PASSWORD=your_password
 DB_NAME=your_db_name
 ```
 
-### 2) Run the backend (FastAPI)
+### 2. Run backend
 From the repo root:
 ```
 cd src/Backend
@@ -109,9 +108,9 @@ python3 main.py
 Backend runs at:
 - `http://127.0.0.1:5000`
 
-### 3) Run the frontend (Plaid Link UI)
-In a new terminal:
 
+### 3. Run frontend
+In a new terminal:
 ```
 cd src/Frontend
 python3 -m http.server 8000
@@ -120,5 +119,6 @@ python3 -m http.server 8000
 Open:
 - `http://127.0.0.1:8000`
 
-### 4) What to Expect
+
+### 4. What to Expect
 Once the application is running, you'll interact with a interface you will be to "connect your account". This component will allow you to secruly connect your finaincal instition(s). After successful connection(s) you will be able to see data across all your finaincal accounts and a chat box to input a question about your personal finances. The agents will debate the task and return a final answer after dynamically balancing between fast inference and more detailed reasoning.
